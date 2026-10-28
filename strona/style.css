@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1d;
+    color: #d1d5db;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Klasa wrapper centruje tylko lewo/prawo, nie zeruje odstępów góra/dół */
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 850px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Wyraźne odstępy góra/dół dla każdego działu */
+section {
+    scroll-margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #93c5fd;
+    letter-spacing: 1px;
+}
+
+/* Nawigacja */
+nav {
+    position: sticky;
+    top: 0;
+    padding: 18px 0;
+    background-color: #222228;
+    text-align: center;
+    z-index: 10;
+    border-bottom: 1px solid #2d2d35;
+}
+
+.nav-items a {
+    display: inline-block;
+    padding: 5px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #d1d5db;
+    transition: color 0.3s;
+}
+
+.nav-items a:hover {
+    color: #0099ff;
+}
+
+/* Nagłówek (header) */
+.header {
+    position: relative;
+    height: 320px;
+    background-image: url('https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 90%;
+}
+
+.hero-text h1 {
+    margin-bottom: 12px;
+    text-shadow: 3px 3px 5px #000;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.hero-text span {
+    text-transform: uppercase;
+    color: #0099ff;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #d1d5db;
+}
+
+/* Sekcja O zajęciach i zdjęcie */
+.about-us-info {
+    margin-bottom: 35px;
+    background-color: #222228;
+    border-left: 3px solid #0099ff;
+    padding: 20px 25px;
+}
+
+.zdjecie {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 35px auto 10px auto;
+    border-radius: 8px;
+    border: 2px solid #2d2d35;
+}
+
+/* Lista przedmiotów */
+.tematy {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+.tematy li {
+    margin-bottom: 14px;
+}
+
+/* Tabela cennika */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 16px 14px;
+    text-align: left;
+    border-bottom: 1px solid #2d2d35;
+}
+
+th {
+    color: #9ca3af;
+}
+
+td strong {
+    color: #ffffff;
+}
+
+/* Kontakt i przycisk */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.kontakt-dane {
+    background-color: #222228;
+    padding: 20px 25px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin: 25px auto;
+    max-width: 400px;
+    line-height: 1.9;
+}
+
+.przycisk {
+    display: inline-block;
+    background-color: #0099ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.przycisk:hover {
+    background-color: #007acc;
+}
+
+/* Stopka (footer) */
+footer {
+    margin-top: 70px;
+    padding: 35px 10px;
+    text-align: center;
+    background-color: #222228;
+    border-top: 1px solid #2d2d35;
+    color: #9ca3af;
+    font-size: 14px;
+}
